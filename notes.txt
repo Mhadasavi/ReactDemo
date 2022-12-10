@@ -1,0 +1,5 @@
+to create react app, run 
+npx create-react-app name
+
+npm install is used to install the required modules in the app.
+npm start is used to start the app.
