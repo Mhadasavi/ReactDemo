@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseComponent from "./components/ExpenseComponent";
+// import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
   const expenseItems = [
@@ -9,18 +10,9 @@ function App() {
   ];
   return (
     <div className="App">
-      {/* <header className="App-header"></header> */}
+      
       <div>
-        <ExpenseItem
-          name={expenseItems[0].itemName}
-          price={expenseItems[0].itemPrice}
-          date={expenseItems[0].date}
-        ></ExpenseItem>
-        <ExpenseItem
-          name={expenseItems[1].itemName}
-          price={expenseItems[1].itemPrice}
-          date={expenseItems[1].date}
-        ></ExpenseItem>
+        <ExpenseComponent expenseItemsObject={expenseItems}></ExpenseComponent>
       </div>
     </div>
   );
