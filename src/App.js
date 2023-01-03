@@ -10,7 +10,6 @@ function App() {
   ];
   return (
     <div className="App">
-      
       <div>
         <ExpenseComponent expenseItemsObject={expenseItems}></ExpenseComponent>
       </div>
