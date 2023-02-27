@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import ExpenseComponent from "./components/ExpenseComponent";
+import NewExpense from "./components/NewExpense/NewExpense";
 // import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <div>
+        <NewExpense></NewExpense>
         <ExpenseComponent expenseItemsObject={expenseItems}></ExpenseComponent>
       </div>
     </div>
