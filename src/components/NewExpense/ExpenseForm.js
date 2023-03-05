@@ -2,11 +2,14 @@ import React from "react";
 import './ExpenseForm.css';
 
 const ExpenseForm=()=>{
+    const titleChangeHandler=(event)=>{
+        console.log(event.target.value);
+    }
 return (<form>
     <div className="new-expense__controls">
         <div className="new-expense__control">
             <label>Title</label>
-            <input type='text'></input>
+            <input type='text' onChange={titleChangeHandler}></input>
         </div>
         <div className="new-expense__control">
             <label>Amount</label>
@@ -16,6 +19,9 @@ return (<form>
             <label>Date</label>
             <input type='date' min="2022-01-01" max="2022-12-31"></input>
         </div>
+    </div>
+    <div className="new-expense__actions">
+        <button type="submit">Add Expense</button>
     </div>
 </form>);
 };
